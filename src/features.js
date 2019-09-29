@@ -14,6 +14,12 @@ export default {
    */
   // https://npmjs.com/package/saladcss-partial-import
   partialImport: options => require('postcss-partial-import')(options),
+  customProperties: function customProperties(options) {
+    if (!options) {
+      options = {preserve: false}
+    }
+    return require('postcss-custom-properties')(options)
+  },
   // https://npmjs.com/package/saladcss-bem
   bem: options => require('@lneedy/saladcss-bem')(options),
   // https://npmjs.com/package/precss

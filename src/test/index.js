@@ -34,24 +34,24 @@ featuresList.forEach(function(name) {
     })
 })
 // all features
-// const input = utils.readFixture(join('features', 'all'))
-// const expected = utils.readFixture(join('features', 'all' + '.expected'))
-// let options = {features: {}}
-// featuresList.forEach(function(name) {
-//   options.features[name] = true
-// })
-// postcss(plugin(options))
-//   .process(input, {from: undefined})
-//   .then(result => {
-//     let actual = result.css
+const input = utils.readFixture(join('features', 'all'))
+const expected = utils.readFixture(join('features', 'all' + '.expected'))
+let options = {features: {}}
+featuresList.forEach(function(name) {
+  options.features[name] = true
+})
+postcss(plugin(options))
+  .process(input, {from: undefined})
+  .then(result => {
+    let actual = result.css
 
-//     utils.write(utils.fixturePath(join('features', 'all' + '.actual')), actual)
-//     // console.log(27)
-//     tape('all', t => {
-//       t.equal(actual, expected)
-//       t.end()
-//     })
-//   })
-//   .catch(e => {
-//     console.log(e)
-//   })
+    utils.write(utils.fixturePath(join('features', 'all' + '.actual')), actual)
+    // console.log(27)
+    tape('all', t => {
+      t.equal(actual, expected)
+      t.end()
+    })
+  })
+  .catch(e => {
+    console.log(e)
+  })

@@ -1,4 +1,4 @@
-## Version 1.1.1
+## Version 1.2.0
 
 Remove the `reset` function, please actively import the files needed by the old project. Under the reset folder of CSS, change the dependency of the `@import` function
 
