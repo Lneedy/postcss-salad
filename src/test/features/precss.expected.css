@@ -2,7 +2,8 @@
   color: green;
 }
 
-@media (min-width: 600px), handheld and (orientation: landscape) {
+@media (min-width: 600px),
+handheld and (orientation: landscape) {
 
   .color {
     color: green;
@@ -10,114 +11,109 @@
 }
 
 .is-1-equal-to-1 {
-  color: green;
-}
+    color: green;
+  }
 
-.not-is-1-equal-to-2 {
-  color: green;
-}
+.is-1-equal-to-2 {
+    color: red;
+  }
 
-.not-number-equal-to-1 {
-  color: green;
-}
+.is-number-equal-to-1 {
+    color: red;
+  }
 
 .is-number-equal-to-5 {
-  color: green;
-}
-
-.is-1-not-equal-to-2 {
-  color: green;
-}
+    color: green;
+  }
 
 .is-1-less-than-2 {
-  color: green;
-}
+    color: green;
+  }
 
 .is-1-greater-than-0 {
-  color: green;
-}
+    color: green;
+  }
 
-.is-1-less-than-or-equal-to-1 {
-  color: green;
-}
+.is-1-greater-than-1 {
+    color: red;
+  }
 
-.is-1-less-than-or-equal-to-2 {
-  color: green;
-}
+.is-1-greater-than-2 {
+    color: red;
+  }
 
 .is-1-less-than-or-equal-to-0 {
-  color: green;
-}
+    color: green;
+  }
 
 .is-1-less-than-or-equal-to-1 {
-  color: green;
-}
+    color: green;
+  }
+
+.is-1-less-than-or-equal-to-2 {
+    color: red;
+  }
 
 .for-1 {
-  width: 1px;
-}
+    width: 1px;
+  }
 
 .for-3 {
-  width: 3px;
-}
+    width: 3px;
+  }
 
 .for-5 {
-  width: 5px;
-}
+    width: 5px;
+  }
 
 .for-6 {
-  height: 6px;
-}
+    height: 6px;
+  }
 
 .for-4 {
-  height: 4px;
-}
+    height: 4px;
+  }
 
 .for-2 {
-  height: 2px;
-}
+    height: 2px;
+  }
 
 .test-foo {
-  color: green;
-}
+    color: green;
+  }
 
 .test-bar {
-  color: green;
-}
+    color: green;
+  }
 
 .test-baz {
-  color: green;
-}
-
-.phone img {
-  display: block;
-}
-
-.phone_title {
-  width: 500px;
-}
+    color: green;
+  }
 
 .phablet {
-  color: green;
-}
+          color: green;
+        }
 
-body.is_dark .phone_title {
-  color: white;
-}
+.phone_title {
+    width: 500px
+  }
 
 @media (max-width: 500px) {
-
   .phone_title {
-    width: auto;
+      width: auto
   }
-}
+    }
+
+body.is_dark .phone_title {
+      color: white
+    }
+
+.phone img {
+    display: block;
+  }
 
 .bar {
   background: pink;
-}
-
-.bar {
-
   background-color: green;
   color: green;
 }

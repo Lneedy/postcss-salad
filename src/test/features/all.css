@@ -1,5 +1,10 @@
+:root {
+  --color: blue;
+}
+
 * {
   transition: transform 1s;
+  color: var(--color)
 }
 
 @keyframes spin {

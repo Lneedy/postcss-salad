@@ -1,3 +1,10 @@
+/*
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-08-08 14:47:44
+ * @LastEditTime: 2019-08-09 16:28:03
+ * @LastEditors: Please set LastEditors
+ */
 export default {
   /**
    * REMINDER:
@@ -5,46 +12,30 @@ export default {
    * order is important
    * ******************
    */
-  
   // https://npmjs.com/package/saladcss-partial-import
-  partialImport: (options) => require("saladcss-partial-import")(options),
-
+  partialImport: options => require('postcss-partial-import')(options),
   // https://npmjs.com/package/saladcss-bem
-  bem: (options) => require("saladcss-bem")(options),
-
+  bem: options => require('@lneedy/saladcss-bem')(options),
   // https://npmjs.com/package/precss
-  precss: (options) => require("precss")(options),
-
+  precss: options => require('precss')(options),
   // postcss-sass-color-functions
-  sassColor: (options) => require("postcss-sass-color-functions")(options),
-
-  // https://npmjs.com/package/postcss-css-reset
-  reset: (options) => require("postcss-css-reset")(options),
-  
+  sassColor: options => require('postcss-color-function')(options),
   // https://npmjs.com/package/postcss-utils
-  utils: (options) => require("postcss-utils")(options),
-
+  utils: options => require('postcss-utils')(options),
   // https://npmjs.com/package/postcss-calc
-  calc: (options) => require("postcss-calc")(options),
-
+  calc: options => require('postcss-calc')(options),
   // https://npmjs.com/package/postcss-initial
-  initial: (options) => require("postcss-initial")(options),
-
+  initial: options => require('postcss-initial')(options),
   // https://npmjs.com/package/postcss-inline-svg
-  inlineSvg: (options) => require("postcss-inline-svg")(options),
-
+  inlineSvg: options => require('postcss-inline-svg')(options),
   // https://npmjs.com/package/postcss-short
-  short: (options) => require("postcss-short")(options),
-
+  short: options => require('postcss-short')(options),
   // https://npmjs.com/package/postcss-shape
-  shape: (options) => require("postcss-shape")(options),
-
+  shape: options => require('postcss-shape')(options),
   // https://npmjs.com/package/pixrem
-  rem: (options) => require("pixrem")(options),
-
+  rem: options => require('pixrem')(options),
   // https://npmjs.com/package/autoprefixer
-  autoprefixer: (options) => require("autoprefixer")(options),
-  
+  autoprefixer: options => require('autoprefixer')(options),
   // https://npmjs.com/package/postcss-neat
-  neat: (options) => require("postcss-neat")(options)
+  neat: options => require('postcss-neat')(options)
 }
