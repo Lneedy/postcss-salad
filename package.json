@@ -1,6 +1,6 @@
 {
   "name": "@lneedy/postcss-salad",
-  "version": "2.0.1",
+  "version": "1.1.1",
   "description": "webpack 4.0 沙拉是一个能够帮助你更加写出更加简洁、优雅的CSS的样式解决方案。",
   "main": "lib/index.js",
   "scripts": {
