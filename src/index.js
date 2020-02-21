@@ -36,10 +36,14 @@ const plugin = postcss.plugin('postcss-salad', options => {
   ) {
     // delete features.autoprefixer.browsers
     features.autoprefixer.overrideBrowserslist = [
-      'last 5 version',
-      '> 10%',
-      'maintained node versions',
-      'not ie <= 8'
+      // 'last 5 version',
+      // '> 10%',
+      // 'maintained node versions',
+      // 'not ie <= 8'
+      // 'last 10 versions'
+      "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
     ]
   }
 

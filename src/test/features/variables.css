@@ -1,7 +1,8 @@
 :root {
-  --color: blue;
-}
-
-* {
-  color: var(--color)
+  --primary: blue;
+  --warning: yellow;
+  --error: red;
+  --info: #15a2fd;
+  --info-test: color(var(--info) h(+3) s(23%) l(67%));
+  --info-test1: rgba(var(--info-test), .3);
 }
