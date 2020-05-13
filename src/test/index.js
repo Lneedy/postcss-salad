@@ -40,6 +40,7 @@ function sigleTest() {
           utils.fixturePath(join('features', name + '.actual')),
           actual
         )
+        console.log(43, actual)
         if (actual.length > 0) {
           console.log(name, 'success!\n')
         }
@@ -83,6 +84,7 @@ function tapeTest(name = 'all', actual, expected) {
 
 function tapeSigle() {
   featuresList.forEach(name => {
+    console.log(name)
     const actual = utils.readFixture(join('features', name + '.actual'))
     const expected = utils.readFixture(join('features', name + '.expected'))
     tapeTest(name, actual, expected)
